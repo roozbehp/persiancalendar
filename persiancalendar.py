@@ -415,23 +415,27 @@ TEHRAN = (35.68, 51.42, 1100, +3.5)
 # Middle of Iran.
 IRAN = (35.5, 52.5, 0, +3.5)
 
-
-def midday_in_tehran(date):
-    """Universal time of true noon on fixed date in Tehran."""
-    return midday(date, TEHRAN)
+persian_locale = IRAN
 
 
-def midday_in_iran(date):
-    """Universal time of true noon on fixed date on Iran's time meridian."""
-    return midday(date, IRAN)
+def set_persian_locale(locale):
+    """Change the locale used for computing the Persian calenar."""
+    global persian_locale
+    persian_locale = locale
+
+
+def midday_in_persian_locale(date):
+    """Universal time of true noon on fixed date in the locale used for computing the Persian calenddar."""
+    return midday(date, persian_locale)
 
 
 def persian_new_year_on_or_before(date):
     """Fixed date of Astronomical Persian New Year on or before fixed date."""
     # Approximate time of equinox.
-    approx = estimate_prior_solar_longitude(SPRING, midday_in_iran(date))
+    approx = estimate_prior_solar_longitude(
+        SPRING, midday_in_persian_locale(date))
     day = math.floor(approx) - 1
-    while solar_longitude(midday_in_iran(day)) > SPRING + 2:
+    while solar_longitude(midday_in_persian_locale(day)) > SPRING + 2:
         day += 1
     return day
 
