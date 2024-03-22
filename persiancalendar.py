@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 #
-# This code is based on the Lisp code published by Reingold and Dershowitz
-# in Common Lisp under the Apache 2.0 license.
+# This code is based on the Common Lisp code published by Reingold and Dershowitz
+# under the Apache 2.0 license.
 #
 # Python port and further modificiations were made by Roozbeh Pournader.
 #
