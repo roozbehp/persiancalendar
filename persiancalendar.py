@@ -412,6 +412,8 @@ PERSIAN_EPOCH = fixed_from_julian(622, 3, 19)
 
 # Location of Tehran, Iran.
 TEHRAN = (35.68, 51.42, 1100, +3.5)
+# Middle of Iran.
+IRAN = (35.5, 52.5, 0, +3.5)
 
 
 def midday_in_tehran(date):
@@ -419,12 +421,17 @@ def midday_in_tehran(date):
     return midday(date, TEHRAN)
 
 
+def midday_in_iran(date):
+    """Universal time of true noon on fixed date on Iran's time meridian."""
+    return midday(date, IRAN)
+
+
 def persian_new_year_on_or_before(date):
     """Fixed date of Astronomical Persian New Year on or before fixed date."""
     # Approximate time of equinox.
-    approx = estimate_prior_solar_longitude(SPRING, midday_in_tehran(date))
+    approx = estimate_prior_solar_longitude(SPRING, midday_in_iran(date))
     day = math.floor(approx) - 1
-    while solar_longitude(midday_in_tehran(day)) > SPRING + 2:
+    while solar_longitude(midday_in_iran(day)) > SPRING + 2:
         day += 1
     return day
 
