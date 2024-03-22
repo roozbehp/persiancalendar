@@ -475,3 +475,10 @@ def nowruz(g_year):
     persian_year = g_year - gregorian_year_from_fixed(PERSIAN_EPOCH) + 1
     y = persian_year - 1 if persian_year <= 0 else persian_year  # No Persian year 0
     return fixed_from_persian((y, 1, 1))
+
+
+def persian_leap_year(p_year):
+    """True if g_year is a leap year on the Persian calendar."""
+    this_nowruz = fixed_from_persian((p_year, 1, 1))
+    next_nowruz = fixed_from_persian((p_year + 1, 1, 1))
+    return next_nowruz - this_nowruz == 366
