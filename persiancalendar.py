@@ -459,12 +459,10 @@ def persian_from_fixed(date):
     y = round((new_year - PERSIAN_EPOCH) / MEAN_TROPICAL_YEAR) + 1
     year = y if 0 < y else y - 1  # No year zero
     day_of_year = date - fixed_from_persian((year, 1, 1)) + 1
-    month = math.ceil(
-        day_of_year /
-        31) if day_of_year <= 186 else math.ceil(
-        (day_of_year -
-         6) /
-        30)
+    if day_of_year <= 186:
+        month = math.ceil(day_of_year / 31)
+    else:
+        month = math.ceil((day_of_year - 6) / 30)
     # Calculate the day by subtraction
     day = date - fixed_from_persian((year, month, 1)) + 1
     return (year, month, day)
