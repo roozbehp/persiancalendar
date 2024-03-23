@@ -419,13 +419,13 @@ persian_locale = IRAN
 
 
 def set_persian_locale(locale):
-    """Change the locale used for computing the Persian calenar."""
+    """Change the locale used for computing the Persian calendar."""
     global persian_locale
     persian_locale = locale
 
 
 def midday_in_persian_locale(date):
-    """Universal time of true noon on fixed date in the locale used for computing the Persian calenddar."""
+    """Universal time of true noon on fixed date in the locale used for computing the Persian calendar."""
     return midday(date, persian_locale)
 
 
