@@ -1,4 +1,4 @@
-# !/usr/bin/env python3
+#!/usr/bin/env python3
 #
 # This code is based on the Common Lisp code published by Reingold and Dershowitz
 # under the Apache 2.0 license.
@@ -480,3 +480,11 @@ def persian_leap_year(p_year):
     this_nowruz = fixed_from_persian((p_year, 1, 1))
     next_nowruz = fixed_from_persian((p_year + 1, 1, 1))
     return next_nowruz - this_nowruz == 366
+
+
+if __name__ == '__main__':
+    import datetime
+    today = datetime.date.today()
+    fixed_date = fixed_from_gregorian((today.year, today.month, today.day))
+    persian_date = persian_from_fixed(fixed_date)
+    print("%d/%d/%d" % persian_date)
