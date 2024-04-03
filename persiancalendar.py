@@ -123,7 +123,7 @@ def gregorian_from_fixed(date):
         correction = 1
     else:
         correction = 2
-    month = (12 * (prior_days - correction) +
+    month = (12 * (prior_days + correction) +
              373) // 367  # Assuming a 30-day Feb
     # Calculate the day by subtraction.
     day = date - fixed_from_gregorian((year, month, 1)) + 1
