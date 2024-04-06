@@ -43,6 +43,6 @@ def test_fast():
 
 
 if __name__ == "__main__":
-    test_roundtrip()
+    test_roundtrip_astronomical()
     test_roundtrip_fast()
     test_fast()
