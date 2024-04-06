@@ -31,6 +31,9 @@ import math
 
 PERSIAN_EPOCH = 226896  # Precalculated result from Calendarical Calculations
 
+SUPPORTED_FIRST_YEAR = 1178
+SUPPORTED_LAST_YEAR = 3000
+
 # All these years are not leap, while they are considered leap by the 33-year
 # rule. The year following each of them is leap, but it's considered non-leap
 # by the 33-year rule. This table has been tested to match the modified
