@@ -27,7 +27,7 @@
 # Sample values for the functions (useful for debugging) are given in
 # Appendix C of the book.
 
-PERSIAN_EPOCH = 226896  # Precalculated result from Calendarical Calculations
+PERSIAN_EPOCH = 226896  # Precalculated result from Calendrical Calculations
 
 SUPPORTED_FIRST_YEAR = 1178
 SUPPORTED_LAST_YEAR = 3000
