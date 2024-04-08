@@ -70,6 +70,8 @@ def fixed_from_persian_fast(p_date):
 
 
 def div_ceil(a, b):
+    """Equivalent to math.ceil(a / b), but with no floating point math and no
+    dependency on Python's math module"""
     return -((-a) // b)
 
 
