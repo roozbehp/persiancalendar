@@ -6,8 +6,8 @@ to the 52.5 degrees east meridian, which is what the Iranian calendar authority 
 
 The output of this code matches the partial leap year table published by the
 Iranian calendar authority (The Center for Calendar, Geophysics Institute,
-University of Tehran), available at
-https://calendar.ut.ac.ir/Fa/News/Data/Doc/KabiseShamsi1206-1498-new.pdf.
+University of Tehran), archived version available at
+https://web.archive.org/web/20230712052459if_/https://calendar.ut.ac.ir/Fa/News/Data/Doc/KabiseShamsi1206-1498-new.pdf.
 (That leap year table covers 1206 to 1498 AP.)
 
 The original method, published in the book Calendrical Calculations and
