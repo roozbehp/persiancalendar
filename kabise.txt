@@ -4,7 +4,7 @@
 #
 # This is the plain text version of the the Persian leap year data provided
 # by the Iranian calendar authority at:
-# https://calendar.ut.ac.ir/Fa/News/Data/Doc/KabiseShamsi1206-1498-new.pdf
+# https://calendar.ut.ac.ir/documents/2139738/7092644/Kabise+Shamsi+1206-1498.pdf
 # 
 # It is provided in plain text format for automatic testing, as well as
 # the website of the Iranian calendar authority not always being accessible
