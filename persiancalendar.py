@@ -440,6 +440,18 @@ def persian_new_year_on_or_before(date):
     return day
 
 
+def persian_borji_new_month_on_or_before(date, month):
+    """Fixed date of Borji Persian new month on or before fixed date."""
+    # Approximate time of equinox.
+    target_long = (month - 1) * 30
+    approx = estimate_prior_solar_longitude(
+        target_long, midday_in_persian_locale(date))
+    day = math.floor(approx) - 1
+    while not (target_long + 2 > solar_longitude(midday_in_persian_locale(day)) >= target_long):
+        day += 1
+    return day
+
+
 def fixed_from_persian(p_date):
     """Fixed date of Astronomical Persian date p_date."""
     year, month, day = p_date
@@ -450,6 +462,18 @@ def fixed_from_persian(p_date):
     return (new_year - 1  # Days in prior years.
             # Days in prior months this year.
             + (31 * (month - 1) if month <= 7 else 30 * (month - 1) + 6)
+            + day)  # Days so far this month.
+
+
+def fixed_from_persian_borji(p_date):
+    """Fixed date of Borji Persian date p_date."""
+    year, month, day = p_date
+    new_month = persian_borji_new_month_on_or_before(
+        PERSIAN_EPOCH + 180
+        + math.floor(MEAN_TROPICAL_YEAR *
+                     ((year - 1 if 0 < year else year)+(month-1)/12)),
+        month)
+    return (new_month - 1  # Days in prior months.
             + day)  # Days so far this month.
 
 
@@ -465,6 +489,19 @@ def persian_from_fixed(date):
         month = math.ceil((day_of_year - 6) / 30)
     # Calculate the day by subtraction
     day = date - fixed_from_persian((year, month, 1)) + 1
+    return (year, month, day)
+
+
+def persian_borji_from_fixed(date):
+    """Borji Persian date corresponding to fixed date."""
+    new_year = persian_new_year_on_or_before(date)
+    y = round((new_year - PERSIAN_EPOCH) / MEAN_TROPICAL_YEAR) + 1
+    year = y if 0 < y else y - 1  # No year zero
+    month = 1
+    while month < 12 and date >= fixed_from_persian_borji((year, month+1, 1)):
+        month += 1
+    # Calculate the day by subtraction
+    day = date - fixed_from_persian_borji((year, month, 1)) + 1
     return (year, month, day)
 
 
