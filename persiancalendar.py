@@ -412,7 +412,14 @@ def estimate_prior_solar_longitude(lamda, tee):
 PERSIAN_EPOCH = fixed_from_julian((622, 3, 19))
 
 # Location of Tehran, Iran.
-TEHRAN = (35.68, 51.42, 1100, +3.5)
+#
+# Modified from original code to use the location of
+# Dar ul-Funun, as recommended by Delbar Khakzad.
+# This is due to the fact that Dar ul-Funun had been
+# used to determine the time of true noon in Tehran and
+# make noon announcements by firing cannons.
+TEHRAN = (35.683789, 51.421864, 1100, +3.5)
+
 # Middle of Iran.
 IRAN = (35.5, 52.5, 0, +3.5)
 
