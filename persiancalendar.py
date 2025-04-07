@@ -144,8 +144,9 @@ def julian_leap_year(j_year):
     return (j_year % 4) == (0 if j_year > 0 else 3)
 
 
-def fixed_from_julian(year, month, day):
-    """Fixed date equivalent to the Julian date."""
+def fixed_from_julian(j_date):
+    """Fixed date equivalent to the Julian date j_date."""
+    year, month, day = j_date
     y = year + 1 if year < 0 else year  # No year zero
     return (
         JULIAN_EPOCH - 1  # Days before start of calendar
@@ -408,7 +409,7 @@ def estimate_prior_solar_longitude(lamda, tee):
 
 
 # Fixed date of start of the Persian calendar.
-PERSIAN_EPOCH = fixed_from_julian(622, 3, 19)
+PERSIAN_EPOCH = fixed_from_julian((622, 3, 19))
 
 # Location of Tehran, Iran.
 TEHRAN = (35.68, 51.42, 1100, +3.5)
