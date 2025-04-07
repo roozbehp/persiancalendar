@@ -410,8 +410,8 @@ def estimate_prior_solar_longitude(lamda, tee):
 # Fixed date of start of the Persian calendar.
 PERSIAN_EPOCH = fixed_from_julian(622, 3, 19)
 
-# Location of Tehran, Iran.
-TEHRAN = (35.68, 51.42, 1100, +3.5)
+# Location of Tehran, Iran. Specifically location of "Dar ul-Funun" as https://w.wiki/DjPM
+TEHRAN = (35.683789, 51.421864, 1100, +3.5)
 # Middle of Iran.
 IRAN = (35.5, 52.5, 0, +3.5)
 
