@@ -1,0 +1,15 @@
+# روزنامهٔ رسمی دولت ایران
+1290/1 1911-03-22 # Implied from issue of Tue 1329/4/18 AH=28 Hamal
+# 1290/2 Sowr issue are inconsistent. Skipping.
+1290/3 1911-05-22 # Implied from issue of Thu 1329/5/26 AH=4 Jowza
+1290/4 1911-06-23 # Implied from issue of Tue 1329/6/29 AH=5 Saratan
+# 1290/5 Asad issues are inconsistent. Skipping.
+# 1290/6 Sonboleh issue are inconsistent. Skipping.
+# 1290/7 Mizan issue are inconsistent. Skipping.
+1290/8 1911-10-25 # Implied from issue of Thu 1329/11/17 AH=16 Aqrab
+1290/10 1911-12-23 # Implied from issue of Mon 1330/1/3 AH=3 Jady 
+1290/12 1912-02-20 # Implied from issue of Thu 1330/3/24 AH=24 Hoot. The date is corrected by an archivist, but we don't trust the archivist.
+
+1291/1 1912-03-21 # Implied from issue of Thu 1330/4/8 AH=8 Hamal. The date is corrected by an archivist, but we don't trust the archivist.
+1291/2 1912-04-21 # Implied from issue of Tue 1330/5/5 AH=3 Sowr. The date is corrected by an archivist, but we don't trust the archivist.
+1291/3 1912-05-22 # Implied from issue of Sun 1330/6/8 AH=5 Jowza
