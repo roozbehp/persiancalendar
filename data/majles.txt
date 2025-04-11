@@ -1,0 +1,5 @@
+# مجلس
+1285/9 1906-11-23 # Implied from https://commons.wikimedia.org/wiki/File:Majles_Issue_08.pdf
+# 1285/10 is contradictory
+1285/11 1907-01-21 # Implied from https://commons.wikimedia.org/wiki/File:Majles_Issue_33.pdf
+# The rest of the issues don't mention the day of the week, so we won't rely on them.
