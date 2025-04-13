@@ -13,3 +13,6 @@
 1291/1 1912-03-21 # Implied from issue of Thu 1330/4/8 AH=8 Hamal. The date is corrected by an archivist, but we don't trust the archivist.
 1291/2 1912-04-21 # Implied from issue of Tue 1330/5/5 AH=3 Sowr. The date is corrected by an archivist, but we don't trust the archivist.
 1291/3 1912-05-22 # Implied from issue of Sun 1330/6/8 AH=5 Jowza
+1291/4 1912-06-22 # Implied from issue of Tue 1330/7/9 AH=3 Saratan
+1291/5 1912-07-24 # Implied from issue of Thu 1330/8/10 AH=2 Asad. The date is corrected by an archivist, but we don't trust the archivist.
+1291/6 1912-08-24 # Implied from issue of Sun 1330/9/12 AH=2 Sonboleh. The date is corrected by an archivist, but we don't trust the archivist.
