@@ -16,3 +16,16 @@
 1291/4 1912-06-22 # Implied from issue of Tue 1330/7/9 AH=3 Saratan
 1291/5 1912-07-24 # Implied from issue of Thu 1330/8/10 AH=2 Asad. The date is corrected by an archivist, but we don't trust the archivist.
 1291/6 1912-08-24 # Implied from issue of Sun 1330/9/12 AH=2 Sonboleh. The date is corrected by an archivist, but we don't trust the archivist.
+
+# 1292/2 Sowr issues are inconsistent. Skipping.
+1292/3 1913-05-22 # Implied from issue 209, Sun 1331/6/18 AH=4 Jowza 1292 AP
+1292/4 1913-06-23 # Implied from issue 218, Tue 1331/7/19 AH=2 Saratan 1292 AP. Consistent across the whole month.
+1292/5 1913-07-24 # Issue 225, Thu 1331/8/19 AH=1 Asad 1292 AP. Contradicts issue 226 which is probably a typo since the rest of the month agrees with our decision.
+1292/6 1913-08-24 # Implied from issue 239, Thu 1331/10/9 AH=19 Sonboleh 1292 AP
+1292/7 1913-09-24 # Implied from issue 244, Thu 1331/11/1 AH=9 Mizan 1292 AP
+1292/8 1913-10-24 # Implied from issue 251, Sun 1331/11/25 AH=3 Aqrab 1292 AP
+1292/9 1913-11-23 # Implied from issue 261, Tue 1331/12/25 AH=3 Qows 1292 AP
+1292/10 1913-12-22 # Implied from issue 272, Tue 1332/2/8 AH=16 Jady 1292. Consistent with issues 273 and 274.
+1292/11 1914-01-20 # Implied from issue 278, Thu 1332/2/24 AH=3 Dalv 1292. We only found this single issue for the whole month.
+
+1293/8 1914-10-23 # Implied from issue 339, Sun 1332/12/26 AH=24 Aqrab 1293 AP. We only found this single issue for the whole month.
